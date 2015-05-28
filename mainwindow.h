@@ -15,6 +15,11 @@ public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
 
+private slots :
+    void afficherTemperature(int temp);
+    void changeButtonPh();
+    void changeButtonLight();
+
 private:
     Ui::MainWindow *ui;
 };
