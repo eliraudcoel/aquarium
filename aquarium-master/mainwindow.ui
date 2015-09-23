@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>694</width>
+    <height>366</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>-5</x>
+      <y>-4</y>
+      <width>701</width>
+      <height>351</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;ee&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="Accueil">
+     <attribute name="title">
+      <string>Accueil</string>
+     </attribute>
+     <widget class="QLabel" name="label_welcome">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>10</y>
+        <width>181</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>TextLabel</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Live">
+     <attribute name="title">
+      <string>Live</string>
+     </attribute>
+    </widget>
+    <widget class="QWidget" name="HistoTempe">
+     <attribute name="title">
+      <string>Historique température</string>
+     </attribute>
+     <widget class="QCustomPlot" name="TempPlot" native="true">
+      <property name="geometry">
+       <rect>
+        <x>39</x>
+        <y>29</y>
+        <width>621</width>
+        <height>141</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBoxTempe">
+      <property name="geometry">
+       <rect>
+        <x>40</x>
+        <y>180</y>
+        <width>621</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Actions</string>
+      </property>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>40</y>
+         <width>91</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Température</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_2">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>80</y>
+         <width>91</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Ajout de pH</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_3">
+       <property name="geometry">
+        <rect>
+         <x>380</x>
+         <y>60</y>
+         <width>91</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Lumière</string>
+       </property>
+      </widget>
+      <widget class="QSlider" name="temperature_slider">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>40</y>
+         <width>160</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_temp">
+       <property name="geometry">
+        <rect>
+         <x>180</x>
+         <y>20</y>
+         <width>61</width>
+         <height>15</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_ph">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>80</y>
+         <width>92</width>
+         <height>27</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>On</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_light">
+       <property name="geometry">
+        <rect>
+         <x>470</x>
+         <y>60</y>
+         <width>92</width>
+         <height>27</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>On</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="HistoPH">
+     <attribute name="title">
+      <string>Historique PH</string>
+     </attribute>
+     <widget class="QCustomPlot" name="PhPlot" native="true">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>20</y>
+        <width>621</width>
+        <height>141</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_PH">
+      <property name="geometry">
+       <rect>
+        <x>51</x>
+        <y>171</y>
+        <width>621</width>
+        <height>121</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Actions</string>
+      </property>
+      <widget class="QLabel" name="label_4">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>40</y>
+         <width>91</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Ph</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_5">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>80</y>
+         <width>91</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Ajout de pH</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_6">
+       <property name="geometry">
+        <rect>
+         <x>380</x>
+         <y>60</y>
+         <width>91</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Lumière</string>
+       </property>
+      </widget>
+      <widget class="QSlider" name="ph_slider">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>40</y>
+         <width>160</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_ph">
+       <property name="geometry">
+        <rect>
+         <x>180</x>
+         <y>20</y>
+         <width>61</width>
+         <height>15</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_ph_2">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>80</y>
+         <width>92</width>
+         <height>27</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>On</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="btn_light_2">
+       <property name="geometry">
+        <rect>
+         <x>470</x>
+         <y>60</y>
+         <width>92</width>
+         <height>27</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>On</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Parametres">
+     <attribute name="title">
+      <string>Paramètres</string>
+     </attribute>
+     <widget class="QGroupBox" name="parametre_min_ph">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>621</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Valeurs minimum</string>
+      </property>
+      <widget class="QLabel" name="label_7">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>40</y>
+         <width>91</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Température</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_9">
+       <property name="geometry">
+        <rect>
+         <x>370</x>
+         <y>40</y>
+         <width>91</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>PH</string>
+       </property>
+      </widget>
+      <widget class="QSlider" name="temperature_min">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>40</y>
+         <width>160</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_temp_min">
+       <property name="geometry">
+        <rect>
+         <x>180</x>
+         <y>20</y>
+         <width>61</width>
+         <height>15</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+      <widget class="QDoubleSpinBox" name="ph_min">
+       <property name="geometry">
+        <rect>
+         <x>480</x>
+         <y>40</y>
+         <width>62</width>
+         <height>22</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="parametre_max_ph">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>100</y>
+        <width>621</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Valeurs maximum</string>
+      </property>
+      <widget class="QLabel" name="label_8">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>40</y>
+         <width>91</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Température</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_10">
+       <property name="geometry">
+        <rect>
+         <x>370</x>
+         <y>40</y>
+         <width>91</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>PH</string>
+       </property>
+      </widget>
+      <widget class="QSlider" name="temperature_max">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>40</y>
+         <width>160</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="minimum">
+        <number>3</number>
+       </property>
+       <property name="tracking">
+        <bool>true</bool>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_temp_max">
+       <property name="geometry">
+        <rect>
+         <x>180</x>
+         <y>20</y>
+         <width>61</width>
+         <height>15</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+      <widget class="QDoubleSpinBox" name="PH_max">
+       <property name="geometry">
+        <rect>
+         <x>480</x>
+         <y>40</y>
+         <width>62</width>
+         <height>22</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="parametre_max_ph_2">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>200</y>
+        <width>621</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Configuration alertes</string>
+      </property>
+      <widget class="QLabel" name="label_15">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>60</y>
+         <width>91</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Email</string>
+       </property>
+      </widget>
+      <widget class="QCheckBox" name="checkBoxNotification">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>20</y>
+         <width>431</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Autoriser l'envoi d'email de notification en cas de valeurs minimum/maximum atteintes</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="ValidationEmail">
+       <property name="geometry">
+        <rect>
+         <x>530</x>
+         <y>60</y>
+         <width>75</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>OK</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="AlerteEmail">
+       <property name="geometry">
+        <rect>
+         <x>270</x>
+         <y>90</y>
+         <width>251</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>TextLabel</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="email">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>60</y>
+         <width>331</width>
+         <height>20</height>
+        </rect>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>QCustomPlot</class>
+   <extends>QWidget</extends>
+   <header>qcustomplot.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

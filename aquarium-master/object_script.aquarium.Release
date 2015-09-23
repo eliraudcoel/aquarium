@@ -1,0 +1,13 @@
+INPUT(
+./release\main.o
+./release\mainwindow.o
+./release\qcustomplot.o
+./release\keepparameters.o
+./release\probedata.o
+./release\outil.o
+./release\serveurUDP.o
+./release\sendemail.o
+./release\moc_mainwindow.o
+./release\moc_qcustomplot.o
+./release\moc_serveurUDP.o
+);

@@ -1,0 +1,4 @@
+[{"Type":"ph","Value":4.5,"Timestamp":1439834400,"IdRasp":4},{"Type":"ph","Value":5.0,"Timestamp":1439834700,"IdRasp":2},{"Type":"ph","Value":15.7,"Timestamp":1439835000,"IdRasp":2},
+{"Type":"ph","Value":11.9,"Timestamp":1439835300,"IdRasp":2},{"Type":"ph","Value":1.3,"Timestamp":1439835600,"IdRasp":2},{"Type":"ph","Value":25.2,"Timestamp":1439835900,"IdRasp":2},
+{"Type":"temp","Value":22,"Timestamp":1440075600,"IdRasp":4},{"Type":"temp","Value":17,"Timestamp":1440076200,"IdRasp":2},{"Type":"temp","Value":2,"Timestamp":1440076800,"IdRasp":2},
+{"Type":"temp","Value":7,"Timestamp":1440077400,"IdRasp":2},{"Type":"temp","Value":21,"Timestamp":1440078000,"IdRasp":2},{"Type":"temp","Value":14,"Timestamp":1440078600,"IdRasp":2}]

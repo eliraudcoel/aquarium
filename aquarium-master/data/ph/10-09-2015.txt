@@ -1,0 +1,1 @@
+{Type:"ph", Value:5, Timestamp:1439834700, IdRasp:2},{Type:"ph", Value:15.7, Timestamp:1439835000, IdRasp:2},{Type:"ph", Value:15.7, Timestamp:1439835000, IdRasp:2},
